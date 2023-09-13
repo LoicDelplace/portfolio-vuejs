@@ -1,20 +1,21 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    font-size: $font-size-base;
-    font-family: $font-family;
-    color: $secondary-font-color;
-    background-color: $background-color
+  width: 100vw;
+  height: 100vh;
+  font-size: $font-size-base;
+  font-family: $font-family;
+  color: $secondary-font-color;
+  background-color: $background-color;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 h1 {
-    font-size: $font-size-xxl;
-    color: $primary-font-color;
+  font-size: $font-size-xxl;
+  color: $primary-font-color;
 }
