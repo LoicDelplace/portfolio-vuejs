@@ -1,0 +1,41 @@
+{
+  "experiences": {
+    "Formations": {
+      "BTS": {
+        "title": "Two Year Technical Degree",
+        "location": "@ Lycée Edmond Labbé (Highschool) - DOUAI 59500",
+        "option": "in Digital System IT & Network option",
+        "date": "09/2018 - 06/2020",
+        "content": [
+          "Create Windows Forms app with <span class=\"green\">C#</span>, understand agil methods, learning to work in team to deliver a project from zero.",
+          " I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#. "
+        ],
+        "country": "France"
+      },
+      "M2I" : {
+          "title": "Titre pro",
+          "location": "@ IEMN CNRS - LILLE ",
+          "option": "in Digital System IT & Network option",
+          "date": "09/2018 - 06/2020",
+          "content": [
+            "Create Windows Forms app with <span class=\"green\">C#</span>, understand agil methods, learning to work in team to deliver a project from zero.",
+            " I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#. "
+          ],
+          "country": "France"
+        }
+    },
+    "Internship": {
+      "IEMN": {
+        "title": "Two Year Technical Degree",
+        "location": "@ Lycée Edmond Labbé (Highschool) - DOUAI 59500",
+        "option": "in Digital System IT & Network option",
+        "date": "09/2018 - 06/2020",
+        "content": [
+          "Create Windows Forms app with <span class=\"green\">C#</span>, understand agil methods, learning to work in team to deliver a project from zero.",
+          " I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#. "
+        ],
+        "country": "France"
+      }
+    }
+  }
+}
