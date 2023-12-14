@@ -5,23 +5,30 @@ import GithubLink from "@/components/Buttons/Links/GithubLink.vue";
 </script>
 
 <template>
-<div class="container-myproject">
-  <div class="section-title" id="myprojects">
-    <p><span>03.</span> My projects</p>
-  </div>
-  <div class="myproject-content">
-    <Project title="Shoten" img="uberchips" desc="Shoten is a project designed to enhance the management of your manga collection. It was developed during my training as part of a collaborative effort within a three-person team. This initiative showcases my ability to contribute effectively in a group setting and my commitment to continuous learning and improvement."></Project>
-    <Project title="Uberchips" desc="Working on..."></Project>
-    <div class="check-my-git">
-      <GithubLink link="LoicDelplace"></GithubLink>
-      <div class="check-my-git-text">
-        <p>Don't worry if you want to see more:</p>
-        <p>Check my git.</p>
-        <p class="bold">@LoicDelplace</p>
+  <div class="container-myproject">
+    <div class="section-title" id="myprojects">
+      <p><span>03.</span> My projects</p>
+    </div>
+    <div class="myproject-content">
+      <Project title="Shoten"
+               img="shoten"
+               desc="Shoten is a project designed to enhance the management of your manga collection. It was developed during my training as part of a collaborative effort within a three-person team. This initiative showcases my ability to contribute effectively in a group setting and my commitment to continuous learning and improvement."
+               stacks="NuxtJS, Laravel"
+      ></Project>
+      <Project title="Uberchips"
+               desc="Working on..."
+               side="right"
+      ></Project>
+      <div class="check-my-git">
+        <GithubLink link="LoicDelplace"></GithubLink>
+        <div class="check-my-git-text">
+          <p>Don't worry if you want to see more:</p>
+          <p>Check my git.</p>
+          <p class="bold">@LoicDelplace</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <style scoped lang="scss">

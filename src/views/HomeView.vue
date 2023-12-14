@@ -22,6 +22,6 @@ import Footer from "@/components/Layout/Footer.vue";
 
 <style scoped lang="scss">
 main {
-  padding: 2rem;
+  padding: 1rem;
 }
 </style>

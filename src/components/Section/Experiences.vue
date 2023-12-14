@@ -33,6 +33,7 @@ let xpTitle = ref('Two Year Technical Degree');
 </template>
 
 <style scoped lang="scss">
+
 .container-experiences {
   min-height: 100vh;
 }
@@ -79,6 +80,9 @@ span {
 }
 
 
+//Media screen desktop
+// Font -size : title : 2rem, location : 1rem; option: 1rem; date: 0.8rem; item: 1rem et margin-bottom: 2rem;
+
 .experiences-content {
   width:100%;
   .xp-title {
@@ -86,23 +90,35 @@ span {
     font-size: 1rem;
     font-weight: 400;
     color: $tertiary-color;
+    @media screen and (min-width: $bp-md) {
+      font-size: 2rem;
+    }
   }
   .xp-location {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 0.5rem;
     color: $primary-color;
+    @media screen and (min-width: $bp-md) {
+      font-size: 1rem;
+    }
   }
   .xp-option {
     font-size: 0.8rem;
     font-weight: 400;
     color: $primary-font-color;
+    @media screen and (min-width: $bp-md) {
+      font-size: 1rem;
+    }
   }
   .xp-date {
     margin-top: 0.5rem;
     font-size: 0.6rem;
     font-weight: 400;
     color: $tertiary-font-color;
+    @media screen and (min-width: $bp-md) {
+      font-size: 0.8rem;
+    }
   }
   .xp-content-list {
     margin-top: 1rem;
@@ -112,6 +128,10 @@ span {
       font-weight: 400;
       color: $tertiary-font-color;
       margin-bottom: 0.5rem;
+      @media screen and (min-width: $bp-md) {
+        font-size: 1rem;
+        margin-top: 2rem;
+      }
       &:last-child {
         margin-bottom: 0;
       }

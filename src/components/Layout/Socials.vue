@@ -1,5 +1,4 @@
 <script setup>
-
 import GithubLink from "@/components/Buttons/Links/GithubLink.vue";
 </script>
 
