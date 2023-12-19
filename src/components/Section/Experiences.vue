@@ -2,8 +2,12 @@
 import {ref} from 'vue'
 import XpButton from "@/components/Buttons/XpButton.vue";
 
-//Button selection selectTab()
+//Find experience in my json and get text...
+import json from '@/locales/en.json';
+const formation = json.experiences.Training;
 
+//Button selection selectTab()
+let selectTab = "Formation"
 //Text
 let xpTitle = ref('Two Year Technical Degree');
 </script>
@@ -15,19 +19,35 @@ let xpTitle = ref('Two Year Technical Degree');
     </div>
       <div class="experiences-type">
         <!-- Rendre dynamique -->
-        <XpButton class="selected">Formation</XpButton>
-        <XpButton>Others</XpButton>
+        <XpButton class="selected">Studies</XpButton>
+        <XpButton>Jobs</XpButton>
         <XpButton>Others</XpButton>
       </div>
     <div class="experiences-content">
-      <p class="xp-title">{{ xpTitle }} </p>
-      <p class="xp-location">@ Lycée Edmond Labbé (Highschool) - DOUAI 59500</p>
-      <p class="xp-option">in Digital System IT & Network option</p>
-      <p class="xp-date">09/2018 - 06/2020</p>
-      <ul class="xp-content-list">
-        <li class="xp-content-item">Create Windows Forms app with <span class="green">C#</span>, understand agil methods, learning to work in team to deliver a project from zero.</li>
-        <li class="xp-content-item"> I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#. </li>
-      </ul>
+      <div class="experience" v-if="selectTab === 'Formation'">
+        <p class="xp-title">Two Year Technical Degree</p>
+        <p class="xp-location">@ Lycée Edmond Labbé (Highschool) - DOUAI 59500</p>
+        <p class="xp-option">in Digital System IT & Network option</p>
+        <p class="xp-date">09/2018 - 06/2020</p>
+        <ul class="xp-content-list">
+          <li class="xp-content-item">Create Windows Forms app with <span class="green">C#</span>, understand agil methods, learning to work in team to deliver a project from zero.</li>
+          <li class="xp-content-item"> I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#. </li>
+        </ul>
+      </div>
+      <div class="experience" v-if="selectTab === 'Formation'">
+        <p class="xp-title">Professional Certificate in Web and Mobile Development</p>
+        <p class="xp-location">@ M2I Formation - VILLENEUVE D'ASCQ</p>
+        <p class="xp-option">Full Stack Web Development</p>
+        <p class="xp-date">05/2023 - 01/2024</p>
+        <ul class="xp-content-list">
+          <li class="xp-content-item">Beginning with <span>Figma</span> to create our UI/UX Designs</li>
+          <li class="xp-content-item">Learning all basics of front web development with <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>.</li>
+          <li class="xp-content-item">Discover my first front web framework <span>VueJS</span></li>
+          <li class="xp-content-item">The second part of my training is back-end development with <span>PHP</span> and <span>SQL</span> for my database</li>
+          <li class="xp-content-item">In a second time I began working with <span>Laravel</span> and learn fundamentals about this stack.</li>
+          <li class="xp-content-item">I finished my training with <span>NodeJS</span> and <span>MongoDB.</span></li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -85,6 +105,12 @@ span {
 
 .experiences-content {
   width:100%;
+  .experience{
+    margin-top:2rem;
+    &:last-child{
+      margin-bottom:2rem;
+    }
+  }
   .xp-title {
     margin-top: 1rem;
     font-size: 1rem;
