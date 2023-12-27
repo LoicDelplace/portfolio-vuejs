@@ -54,9 +54,6 @@ let xpTitle = ref('Two Year Technical Degree');
 
 <style scoped lang="scss">
 
-.container-experiences {
-  min-height: 100vh;
-}
 span {
   color: $primary-font-color;
 }
