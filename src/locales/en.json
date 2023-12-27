@@ -1,45 +1,43 @@
 {
   "experiences": {
-    "Training": {
-      "BTS": {
+    "Training": [
+      {
         "title": "Two Year Technical Degree",
         "location": "@ Lycée Edmond Labbé (Highschool) - DOUAI 59500",
         "option": "in Digital System IT & Network option",
         "date": "09/2018 - 06/2020",
         "content": [
-          "Create Windows Forms app with <span class=\"green\">C#</span>, understand agil methods, learning to work in team to deliver a project from zero.",
+          "Create Windows Forms app with <span>C#</span>, understand agil methods, learning to work in team to deliver a project from zero.",
           " I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#. "
         ],
         "country": "France"
       },
-      "M2I" : {
-          "title": "Professional Certificate in Web and Mobile Development",
-          "location": "@ M2I Formation - VILLENEUVE D'ASCQ ",
-          "option": "Full Stack Web Development",
-          "date": "05/2023 - 01/2024",
-          "content": [
-            "Beginning with <span>Figma</span> to create our UI/UX Designs",
-            "Learning all basics of front web development with <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>.",
-            "Discover our first front web framework <span>VueJS</span>",
-            "The second part of my training is back-end development with <span>PHP</span> and <span>SQL</span> for our databases",
-            "In a second time we began working with <span>Laravel</span> and learn fundamentals about this stack.",
-            "I finished my training with <span>NodeJS</span> and <span>MongoDB.</span>"
-          ],
-          "country": "France"
-        }
-    },
-    "Internship": {
-      "IEMN": {
-        "title": "Two Year Technical Degree",
-        "location": "@ Lycée Edmond Labbé (Highschool) - DOUAI 59500",
-        "option": "in Digital System IT & Network option",
-        "date": "09/2018 - 06/2020",
+      {
+        "title": "Professional Certificate in Web and Mobile Development",
+        "location": "@ M2I Formation - VILLENEUVE D'ASCQ",
+        "option": "Full Stack Web Development",
+        "date": "05/2023 - 01/2024",
         "content": [
-          "Create Windows Forms app with <span class=\"green\">C#</span>, understand agil methods, learning to work in team to deliver a project from zero.",
-          " I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#. "
+          "Beginning with <span>Figma</span> to create our UI/UX Designs",
+          "Learning all basics of front web development with <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>.",
+          "Discover my first front web framework <span>VueJS</span>",
+          "The second part of my training is back-end development with <span>PHP</span> and <span>SQL</span> for my database",
+          "In a second time I began working with <span>Laravel</span> and learn fundamentals about this stack.",
+          "I finished my training with <span>NodeJS</span> and <span>MongoDB.</span>"
         ],
         "country": "France"
       }
-    }
+    ],
+    "Internship": [
+      {
+        "title": "Internship at IEMN",
+        "location": "@ CNRS",
+        "option": "SISR Service - Python Flask Website",
+        "content": [
+          "Work in progress"
+        ],
+        "country": "France"
+      }
+    ]
   }
 }
