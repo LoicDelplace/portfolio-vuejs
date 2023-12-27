@@ -1,9 +1,15 @@
 <script setup>
+const emit = defineEmits(['selectTab']);
+const props = defineProps(['label'])
+
+const selectTab = () => {
+  emit('selectTab', props.label )
+}
 </script>
 
 <template>
-  <button>
-    <slot></slot>
+  <button @click="selectTab">
+    {{ label}}
   </button>
 </template>
 
@@ -11,6 +17,9 @@
 button {
   background: none;
   border:none;
+  cursor:pointer;
+  font-size: 1rem;
+  margin-right: 1rem;
   color: $tertiary-color;
   &.selected {
     color: $primary-color;
