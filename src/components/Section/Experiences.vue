@@ -1,15 +1,20 @@
 <script setup>
-import {ref} from 'vue'
+import { computed, ref } from 'vue';
 import XpButton from "@/components/Buttons/XpButton.vue";
+import experiencesData from '@/locales/en.json';
 
-//Find experience in my json and get text...
-import json from '@/locales/en.json';
-const formation = json.experiences.Training;
+const selectedTab = ref('Training');
+const tabs = computed(() => Object.keys(experiencesData.experiences));
+const experiences = ref(experiencesData.experiences);
 
-//Button selection selectTab()
-let selectTab = "Formation"
-//Text
-let xpTitle = ref('Two Year Technical Degree');
+const selectedExperience = computed(() => {
+  return experiences.value[selectedTab.value] || [];
+});
+
+const selectTab = (tab) => {
+  selectedTab.value = tab;
+};
+
 </script>
 
 <template>
@@ -19,33 +24,23 @@ let xpTitle = ref('Two Year Technical Degree');
     </div>
       <div class="experiences-type">
         <!-- Rendre dynamique -->
-        <XpButton class="selected">Studies</XpButton>
-        <XpButton>Jobs</XpButton>
-        <XpButton>Others</XpButton>
+        <XpButton
+            v-for="tab in tabs"
+            :key="tab"
+            :label="tab"
+            @selectTab="selectTab"
+            :class="{ 'selected': selectedTab === tab }"
+        />
       </div>
     <div class="experiences-content">
-      <div class="experience" v-if="selectTab === 'Formation'">
-        <p class="xp-title">Two Year Technical Degree</p>
-        <p class="xp-location">@ Lycée Edmond Labbé (Highschool) - DOUAI 59500</p>
-        <p class="xp-option">in Digital System IT & Network option</p>
-        <p class="xp-date">09/2018 - 06/2020</p>
+      <div class="experience" v-for="exp in selectedExperience" :key="exp.title">
+        <p class="xp-title">{{ exp.title }}</p>
+        <p class="xp-location">{{ exp.location }}</p>
+        <p class="xp-option">{{ exp.option }}</p>
+        <p class="xp-date">{{ exp.date }}</p>
         <ul class="xp-content-list">
-          <li class="xp-content-item">Create Windows Forms app with <span class="green">C#</span>, understand agil methods, learning to work in team to deliver a project from zero.</li>
-          <li class="xp-content-item"> I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#. </li>
-        </ul>
-      </div>
-      <div class="experience" v-if="selectTab === 'Formation'">
-        <p class="xp-title">Professional Certificate in Web and Mobile Development</p>
-        <p class="xp-location">@ M2I Formation - VILLENEUVE D'ASCQ</p>
-        <p class="xp-option">Full Stack Web Development</p>
-        <p class="xp-date">05/2023 - 01/2024</p>
-        <ul class="xp-content-list">
-          <li class="xp-content-item">Beginning with <span>Figma</span> to create our UI/UX Designs</li>
-          <li class="xp-content-item">Learning all basics of front web development with <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>.</li>
-          <li class="xp-content-item">Discover my first front web framework <span>VueJS</span></li>
-          <li class="xp-content-item">The second part of my training is back-end development with <span>PHP</span> and <span>SQL</span> for my database</li>
-          <li class="xp-content-item">In a second time I began working with <span>Laravel</span> and learn fundamentals about this stack.</li>
-          <li class="xp-content-item">I finished my training with <span>NodeJS</span> and <span>MongoDB.</span></li>
+          <li class="xp-content-item" v-for="item in exp.content" :key="item" v-html="item"></li>
+          <!-- Care XSS via v-html (no input etc) -->
         </ul>
       </div>
     </div>
@@ -57,6 +52,7 @@ let xpTitle = ref('Two Year Technical Degree');
 span {
   color: $primary-font-color;
 }
+
 .section-title{
   margin-top:4rem;
   width:100%;
