@@ -87,6 +87,9 @@ h3 {
 }
 
 .space-btn-logo {
+  @media screen and (min-width: $bp-md) {
+    visibility: hidden;
+  }
   width: 100%;
   display:flex;
   justify-content:space-between;
