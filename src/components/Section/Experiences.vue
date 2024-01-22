@@ -20,7 +20,7 @@ const selectTab = (tab) => {
 <template>
   <section class="container-experiences">
     <div class="section-title" id="experiences">
-      <h3><span>02.</span> Experiences</h3>
+      <h2><span>02.</span> Experiences</h2>
     </div>
       <div class="experiences-type">
         <XpButton
@@ -54,7 +54,7 @@ span {
 .section-title{
   margin-top:4rem;
   width:100%;
-  p {
+  h2 {
     font-size: 20px;
     font-weight: 400;
     color: $tertiary-color;

@@ -5,9 +5,9 @@ import GithubLink from "@/components/Buttons/Links/GithubLink.vue";
 </script>
 
 <template>
-  <div class="container-myproject">
+  <section class="container-myproject">
     <div class="section-title" id="myprojects">
-      <p><span>03.</span> My projects</p>
+      <h2><span>03.</span> My projects</h2>
     </div>
     <div class="myproject-content">
       <Project title="Shoten"
@@ -31,13 +31,13 @@ import GithubLink from "@/components/Buttons/Links/GithubLink.vue";
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
 .section-title{
   width:100%;
-  p {
+  h2 {
     font-size: 20px;
     font-weight: 400;
     color: $tertiary-color;

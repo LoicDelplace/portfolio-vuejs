@@ -5,7 +5,7 @@ import ImgBordered from "@/components/Images/ImgBordered.vue";
 <template>
 <section class="container-about-me">
   <div class="section-title" id="about-me">
-    <p><span class="important">01. </span>About me</p>
+    <h2><span class="important">01. </span>About me</h2>
   </div>
   <div class="about-me-content">
     <p>Hi there! I'm Loïc, a development enthusiast exploring various technologies beyond the web. My journey started during my studies, but life led me to bartending for four years.</p>
@@ -31,7 +31,7 @@ import ImgBordered from "@/components/Images/ImgBordered.vue";
 
 .section-title{
   width:100%;
-  p {
+  h2 {
     font-size: 20px;
     font-weight: 400;
     color: $tertiary-color;
