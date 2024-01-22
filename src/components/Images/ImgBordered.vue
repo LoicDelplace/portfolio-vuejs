@@ -3,7 +3,7 @@
   <div class="picture-container">
     <div class="overlay">
     </div>
-      <img src="@/assets/photo-loic.png" alt="Loic Delplace Picture"/>
+      <img src="@/assets/photo-cv-loic.webp" alt="Loic Delplace Picture"/>
     <div class="picture-back-border">
     </div>
   </div>

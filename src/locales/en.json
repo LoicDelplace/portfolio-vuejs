@@ -3,12 +3,12 @@
     "Training": [
       {
         "title": "Two Year Technical Degree",
-        "location": "@ Lycée Edmond Labbé (Highschool) - DOUAI 59500",
+        "location": "@ Edmond Labbé High School - DOUAI 59500",
         "option": "in Digital System IT & Network option",
         "date": "09/2018 - 06/2020",
         "content": [
-          "Create Windows Forms app with <span>C#</span>, understand agil methods, learning to work in team to deliver a project from zero.",
-          " I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#. "
+          "Create Windows Forms app with <span>C#</span>, understand agile methods, learning to work in a team to deliver a project from zero.",
+          "I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#."
         ],
         "country": "France"
       },
@@ -31,10 +31,13 @@
     "Internship": [
       {
         "title": "Internship at IEMN",
-        "location": "@ CNRS",
-        "option": "SISR Service - Python Flask Website",
+        "location": "@ Institute of Electronic, Microelectronic and Nanotechnologies - VILLENEUVE D'ASCQ 59491",
+        "option": "Website development with Python and Flask microframework",
+        "date": "11/2023 - 12/2023",
         "content": [
-          "Work in progress"
+          "Internship included in my web & mobile web developer training.",
+          "Development of a new style of form for access to IEMN buildings via <span>Python</span> with the microframework <span>Flask</span>",
+          "Modification of administration interfaces for the previous form (still with Flask)"
         ],
         "country": "France"
       }

@@ -2,7 +2,7 @@
 <template>
 
   <div class="picture-container">
-    <img src="@/assets/photo-loic.png" alt="Loic Delplace Picture"/>
+    <img src="@/assets/photo-cv-loic.webp" alt="Loic Delplace Picture"/>
   </div>
 </template>
 
