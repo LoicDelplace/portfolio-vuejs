@@ -17,7 +17,7 @@ import LinkedInLink from "@/components/Buttons/Links/LinkedInLink.vue";
 
 <style scoped lang="scss">
 @media screen and (max-width: $bp-md) {
-  .social-network img,.github, .line-frombottom {
+  .social-network img,.github,.linkedin, .line-frombottom {
     display: none;
   }
 }
