@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import Button from '@/components/Buttons/BasicButton.vue'
+import BasicButton from "@/components/Buttons/BasicButton.vue";
 
 let opened = ref(false);
 
@@ -34,7 +35,7 @@ function switchOpened() {
             <a href="#getintouch" @click="opened = false"><span class="number-nav">04.</span>Get in Touch</a>
           </li>
         </ul>
-        <Button class="getResumeBtn">Resume</Button>
+        <a href="/Loic-Delplace-CV.pdf"><Button class="getResumeBtn">Resume</Button></a>
       </nav>
     </div>
   </header>

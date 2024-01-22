@@ -19,7 +19,7 @@ import MyPicture from "@/components/Images/MyPicture.vue";
           <span class="bold">frontend.</span>
         </p>
         <p>I’m seeking <span class="bold">apprenticeship.</span></p>
-        <BasicButton class="checkResumeBtn"><a href="../../../public/Loic-Delplace-AlternanceCV.pdf">Check out my resume</a></BasicButton>
+        <a href="/Loic-Delplace-CV.pdf"><BasicButton class="checkResumeBtn">Check out my resume</BasicButton></a>
         <!-- TODO: dl cv mobile -->
       </div>
     </div>
