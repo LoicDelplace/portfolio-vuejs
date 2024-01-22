@@ -38,5 +38,8 @@ const closeWIP = () => {
 <style scoped lang="scss">
 main {
   padding: 1rem;
+  @media screen and (min-width: $bp-md) {
+    padding: 3rem;
+  }
 }
 </style>

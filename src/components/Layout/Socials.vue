@@ -1,11 +1,12 @@
 <script setup>
 import GithubLink from "@/components/Buttons/Links/GithubLink.vue";
+import LinkedInLink from "@/components/Buttons/Links/LinkedInLink.vue";
 </script>
 
 <template>
   <div class="social-network">
-      <GithubLink class="github" link="github.com/LoicDelplace"/>
-      <a href="https://www.linkedin.com/in/loicdelplace/"><img src="@/assets/logos/linkedin.svg" alt="linkedin"></a>
+      <GithubLink class="github" link="LoicDelplace"/>
+      <LinkedInLink class="linkedin" link="loicdelplace"/>
   </div>
   <div class="line-frombottom">
   </div>

@@ -6,20 +6,20 @@ import LinkedInLink from "@/components/Buttons/Links/LinkedInLink.vue";
 </script>
 
 <template>
-  <div class="whatsnext-container">
+  <section class="whatsnext-container">
     <div class="section-title" id="getintouch">
       <p><span>04.</span> What's next</p>
     </div>
     <h3>Get in touch</h3>
     <p class="whatsnext-text">I’m always looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to answer as fast as possible. </p>
     <div class="center-component">
-      <BasicButton>Say hello</BasicButton>
+      <a href="mailto:loic.delplace59@gmail.com"><BasicButton>Say hello</BasicButton></a>
     </div>
     <div class="space-btn-logo">
       <GithubLink link="LoicDelplace"/>
       <LinkedInLink link="loicdelplace"/>
     </div>
-</div>
+</section>
 </template>
 
 <style scoped lang="scss">

@@ -12,12 +12,15 @@ import GithubLink from "@/components/Buttons/Links/GithubLink.vue";
     <div class="myproject-content">
       <Project title="Shoten"
                img="shoten"
-               desc="Shoten is a project designed to enhance the management of your manga collection. It was developed during my training as part of a collaborative effort within a three-person team. This initiative showcases my ability to contribute effectively in a group setting and my commitment to continuous learning and improvement."
+               desc="Shoten is a project designed to enhance the management of your manga collection.
+                It was developed during my training as part of a collaborative effort within a three-person team.
+                This initiative showcases my ability to contribute effectively in a group setting
+                and my commitment to continuous learning and improvement."
                stacks="NuxtJS, Laravel"
       ></Project>
       <Project title="Uberchips"
-               desc="Working on..."
-               side="right"
+               desc="UberChips is a home delivery platform specializing in appetizers and chips. Our website provides a user-friendly experience, allowing customers to browse through a variety of enticing options, ranging from the latest chip innovations to popular appetizer snacks."
+               stacks="VueJS"
       ></Project>
       <div class="check-my-git">
         <GithubLink link="LoicDelplace"></GithubLink>
@@ -91,6 +94,14 @@ import GithubLink from "@/components/Buttons/Links/GithubLink.vue";
         color: $tertiary-color;
         text-align: center;
       }
+  }
+}
+
+//Desktop
+@media screen and (min-width: $bp-md) {
+  .check-my-git {
+    width: 400px;
+    margin: auto;
   }
 }
 </style>

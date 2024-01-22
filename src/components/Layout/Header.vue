@@ -14,13 +14,11 @@ function switchOpened() {
     <div class="wrapper">
       <img src="/Logo-LD.png" alt="logo" class="logo" />
       <div class="burger" @click="switchOpened" v-if="opened === false">
-        <!-- Add transition burger to close + waiting for navbar-->
         <div class="line line1"></div>
         <div class="line line2"></div>
         <div class="line line3"></div>
       </div>
       <nav class="navbar" :class="{hide : !opened }">
-        <!-- Add transition slide navbar when opened-->
         <div class="close-btn" @click="switchOpened" v-if="opened === true">&times;</div>
         <ul class="navbar-items">
           <li>

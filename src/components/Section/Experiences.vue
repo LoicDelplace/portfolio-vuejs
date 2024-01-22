@@ -18,12 +18,11 @@ const selectTab = (tab) => {
 </script>
 
 <template>
-  <div class="container-experiences">
+  <section class="container-experiences">
     <div class="section-title" id="experiences">
-      <p><span>02.</span> Experiences</p>
+      <h3><span>02.</span> Experiences</h3>
     </div>
       <div class="experiences-type">
-        <!-- Rendre dynamique -->
         <XpButton
             v-for="tab in tabs"
             :key="tab"
@@ -34,7 +33,7 @@ const selectTab = (tab) => {
       </div>
     <div class="experiences-content">
       <div class="experience" v-for="exp in selectedExperience" :key="exp.title">
-        <p class="xp-title">{{ exp.title }}</p>
+        <h3 class="xp-title">{{ exp.title }}</h3>
         <p class="xp-location">{{ exp.location }}</p>
         <p class="xp-option">{{ exp.option }}</p>
         <p class="xp-date">{{ exp.date }}</p>
@@ -44,7 +43,7 @@ const selectTab = (tab) => {
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
@@ -52,7 +51,6 @@ const selectTab = (tab) => {
 span {
   color: $primary-font-color;
 }
-
 .section-title{
   margin-top:4rem;
   width:100%;
@@ -94,8 +92,6 @@ span {
 
 
 //Media screen desktop
-// Font -size : title : 2rem, location : 1rem; option: 1rem; date: 0.8rem; item: 1rem et margin-bottom: 2rem;
-
 .experiences-content {
   width:100%;
   .experience{
@@ -110,7 +106,7 @@ span {
     font-weight: 400;
     color: $tertiary-color;
     @media screen and (min-width: $bp-md) {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   .xp-location {
@@ -119,7 +115,7 @@ span {
     font-size: 0.5rem;
     color: $primary-color;
     @media screen and (min-width: $bp-md) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
   .xp-option {

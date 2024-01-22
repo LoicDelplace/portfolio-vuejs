@@ -4,9 +4,6 @@ import BasicButton from "@/components/Buttons/BasicButton.vue";
 
 const emit = defineEmits(['closeWIP']);
 
-
-
-
 </script>
 
 <template>
@@ -14,7 +11,8 @@ const emit = defineEmits(['closeWIP']);
       <div class="modal-content">
         <img src="/Logo-LD.png" alt="logo" class="logo" />
         <p>Hey there! 🚀 </p>
-        <p>My website is still a work in progress. Right now, I'm focusing on the mobile version, but there's still some polishing to be done. </p>
+        <p>My website is still a work in progress. Right now, I'm focusing on the mobile version,
+          but there's still some polishing to be done. </p>
         <p>Thanks for understanding before you explore my portfolio. 😊</p>
         <BasicButton @click="emit('closeWIP')">I understand</BasicButton>
       </div>

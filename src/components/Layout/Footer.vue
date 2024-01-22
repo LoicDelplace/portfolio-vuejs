@@ -1,10 +1,6 @@
-<script>
-
-</script>
-
 <template>
   <footer>
-    <p>© Loic DELPLACE - 2023</p>
+    <p>© Loic DELPLACE - 2024</p>
   </footer>
 </template>
 

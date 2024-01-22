@@ -1,7 +1,6 @@
 <script setup>
 import BasicButton from '@/components/Buttons/BasicButton.vue'
 import MyPicture from "@/components/Images/MyPicture.vue";
-//To do : add soft scrolling
 </script>
 
 <template>

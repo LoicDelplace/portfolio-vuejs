@@ -1,6 +1,6 @@
 <script setup>
 
-defineProps( ['link'],['logowidth'],['logoheight'],)
+defineProps( ['link'])
 
 </script>
 
