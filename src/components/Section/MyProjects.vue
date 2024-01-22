@@ -10,24 +10,17 @@ import GithubLink from "@/components/Buttons/Links/GithubLink.vue";
       <h2><span>03.</span> My projects</h2>
     </div>
     <div class="myproject-content">
-      <Project title="Shoten"
-               img="shoten"
-               desc="Shoten is a project designed to enhance the management of your manga collection.
-                It was developed during my training as part of a collaborative effort within a three-person team.
-                This initiative showcases my ability to contribute effectively in a group setting
-                and my commitment to continuous learning and improvement."
-               stacks="NuxtJS, Laravel"
-      ></Project>
-      <Project title="Uberchips"
-               desc="UberChips is a home delivery platform specializing in appetizers and chips. Our website provides a user-friendly experience, allowing customers to browse through a variety of enticing options, ranging from the latest chip innovations to popular appetizer snacks."
-               stacks="VueJS"
+      <Project title="PHuntP:Showdown"
+               img="PHPShowdown"
+               desc="Originally created during my PHP module training, I decided to revisit and expand it to create something much more refined. This is my first 'complete' project since my training. Work in progress. Link coming soon!"
+               stacks="VueJS, Laravel"
       ></Project>
       <div class="check-my-git">
         <GithubLink link="LoicDelplace"></GithubLink>
         <div class="check-my-git-text">
-          <p>Don't worry if you want to see more:</p>
+          <p>Wanna see more?</p>
           <p>Check my git.</p>
-          <p class="bold">@LoicDelplace</p>
+          <p class="bold"><a href="http://www.github.com/loicdelplace">@LoicDelplace</a></p>
         </div>
       </div>
     </div>
@@ -88,6 +81,10 @@ import GithubLink from "@/components/Buttons/Links/GithubLink.vue";
       color: white;
       font-family: $ff-secondary;
       }
+    & a {
+      color: white;
+      text-decoration: none;
+    }
       p {
         font-size: 14px;
         font-weight: 400;

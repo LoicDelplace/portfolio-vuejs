@@ -102,7 +102,7 @@ span {
   }
   .xp-title {
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: $tertiary-color;
     @media screen and (min-width: $bp-md) {
@@ -112,14 +112,14 @@ span {
   .xp-location {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     color: $primary-color;
     @media screen and (min-width: $bp-md) {
       font-size: 1.2rem;
     }
   }
   .xp-option {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
     color: $primary-font-color;
     @media screen and (min-width: $bp-md) {
@@ -128,7 +128,7 @@ span {
   }
   .xp-date {
     margin-top: 0.5rem;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 400;
     color: $tertiary-font-color;
     @media screen and (min-width: $bp-md) {
@@ -139,7 +139,7 @@ span {
     margin-top: 1rem;
     .xp-content-item {
       list-style-image: url(@/assets/logos/list-item-marker.svg);
-      font-size: 0.7rem;
+      font-size: 1rem;
       font-weight: 400;
       color: $tertiary-font-color;
       margin-bottom: 0.5rem;

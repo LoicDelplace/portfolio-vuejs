@@ -8,6 +8,7 @@ import MyPicture from "@/components/Images/MyPicture.vue";
   <section class="container-welcome">
     <div class="left">
       <div class="title">
+        <div class="emoji-hi">👋</div>
         <p class="hey">Hi, my name is</p>
         <p class="name">Loïc Delplace.</p><!-- To do : typewriter animation classico-->
       </div>
@@ -82,17 +83,44 @@ import MyPicture from "@/components/Images/MyPicture.vue";
   }
 }
 
+.emoji-hi {
+  animation: hi-animation 2.5s infinite;
+  transform-origin: 70% 70%;
+  display:inline-block;
+  font-size: 4rem;
+}
+
 /* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-  blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+
+
+@keyframes hi-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 </style>

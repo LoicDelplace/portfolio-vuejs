@@ -73,7 +73,7 @@ import ImgBordered from "@/components/Images/ImgBordered.vue";
   p {
     text-align:justify;
     margin-top: 2rem;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     font-family: $ff-secondary;
     color: $tertiary-color;
@@ -92,10 +92,9 @@ import ImgBordered from "@/components/Images/ImgBordered.vue";
 
 .list-stacks {
   margin-top: 2em;
-  width: 100%;
   display:grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   gap:1em;
   .list-item {
     list-style-image: url(@/assets/logos/list-item-marker.svg);

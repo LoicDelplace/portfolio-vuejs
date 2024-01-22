@@ -7,7 +7,6 @@
 </template>
 
 <style scoped lang="scss">
-
 img {
   @media (max-width: $bp-md) {
     display:none;
@@ -21,3 +20,5 @@ img {
   border-radius: 30px;
 }
 </style>
+<script setup>
+</script>
