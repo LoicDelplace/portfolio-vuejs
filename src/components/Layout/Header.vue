@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import Button from '@/components/Buttons/BasicButton.vue'
-import BasicButton from "@/components/Buttons/BasicButton.vue";
 
 let opened = ref(false);
 
@@ -98,7 +97,6 @@ header {
       @media screen and (min-width: $bp-md) {
         display:flex;
         width: 100%;
-        height: 3rem;
         position: static;
       }
       .getResumeBtn {
@@ -111,7 +109,7 @@ header {
           display:flex;
           justify-content: center;
           align-items: center;
-          width: 20%;
+          width: 100%;
         }
       }
     }
@@ -122,6 +120,7 @@ header {
       gap: 2rem;
       @media screen and (min-width: $bp-md) {
         width: 100%;
+        margin-top:0;
       }
       li {
         &:last-child {
