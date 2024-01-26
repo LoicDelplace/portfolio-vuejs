@@ -1,0 +1,46 @@
+{
+  "experiences": {
+    "Training": [
+      {
+        "title": "Two Year Technical Degree",
+        "location": "@ Edmond Labbé High School - DOUAI 59500",
+        "option": "in Digital System IT & Network option",
+        "date": "09/2018 - 06/2020",
+        "content": [
+          "Create Windows Forms app with <span>C#</span>, understand agile methods, learning to work in a team to deliver a project from zero.",
+          "I learned basics of algorithms, basics of <span>C</span>, <span>C++</span> & learned C#."
+        ],
+        "country": "France"
+      },
+      {
+        "title": "Professional Certificate in Web and Mobile Development",
+        "location": "@ M2I Formation - VILLENEUVE D'ASCQ",
+        "option": "Full Stack Web Development",
+        "date": "05/2023 - 01/2024",
+        "content": [
+          "Beginning with <span>Figma</span> to create our UI/UX Designs",
+          "Learning all basics of front web development with <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>.",
+          "Discover my first front web framework <span>VueJS</span>",
+          "The second part of my training is back-end development with <span>PHP</span> and <span>SQL</span> for my database",
+          "In a second time I began working with <span>Laravel</span> and learn fundamentals about this stack.",
+          "I finished my training with <span>NodeJS</span> and <span>MongoDB.</span>"
+        ],
+        "country": "France"
+      }
+    ],
+    "Internship": [
+      {
+        "title": "Internship at IEMN (CNRS)",
+        "location": "@ Institute of Electronic, Microelectronic and Nanotechnologies - VILLENEUVE D'ASCQ 59491",
+        "option": "Website development with Python and Flask microframework",
+        "date": "11/2023 - 12/2023",
+        "content": [
+          "Internship included in my web & mobile web developer training.",
+          "Development of a new style of form for access to IEMN buildings via <span>Python</span> with the microframework <span>Flask</span>",
+          "Modification of administration interfaces for the previous form (still with Flask)"
+        ],
+        "country": "France"
+      }
+    ]
+  }
+}

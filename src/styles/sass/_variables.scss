@@ -1,23 +1,35 @@
-//imports 
+//imports
 @import url(https://fonts.bunny.net/css?family=fira-mono:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=PT+Mono:400,500,700);
 @import url(https://fonts.bunny.net/css?family=poppins:400,500,700);
-
 // Colors
-$primary-color: #64FFDA;
-$secondary-color: #0B192F;
-$tertiary-color: #CCD6F6;
+$primary-color: #64ffda;
+$secondary-color: #0b192f;
+$tertiary-color: #ccd6f6;
+$background-color: #0b192f;
+$primary-font-color: #64ffda;
+$secondary-font-color: #0b192f;
+$tertiary-font-color: #ccd6f6;
+$font-text-color: #8892af;
+$nav-text-color: #7D7D7D;
 
-$background-color: #0B192F;
-
-$primary-font-color: #64FFDA;
-$secondary-font-color: #0B192F;
-$tertiary-font-color: #CCD6F6;
-
+//Buttons
+$button-disabled-color: #7D7D7D;
 
 //Fonts
-$font-family: 'Fira Mono', sans-serif;
+$ff-main: 'Fira Mono', sans-serif;
+$ff-secondary: 'Poppins', sans-serif;
+$ff-mono: 'PT Mono', sans-serif;
 $font-size-base: 1rem;
 $font-size-lg: 1.5rem;
 $font-size-xl: 2rem;
 $font-size-xxl: 3rem;
 $font-size-xxxl: 4rem;
+
+//Breakpoints
+$bp-xs: 0;
+$bp-sm: 576px;
+$bp-md: 780px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
